@@ -1,0 +1,3 @@
+# Security scanning and testing dependencies
+checkov==3.2.*
+

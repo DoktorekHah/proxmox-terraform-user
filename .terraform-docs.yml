@@ -1,0 +1,32 @@
+---
+
+version: ">= 0.16.0, < 1.0.0"
+
+formatter: markdown table
+
+
+# see: https://terraform-docs.io/user-guide/configuration/output
+output:
+  file: README.md
+  mode: inject
+
+see: https://terraform-docs.io/user-guide/configuration/sort
+sort:
+  enabled: true
+  by: name
+
+# see: https://terraform-docs.io/user-guide/configuration/settings
+settings:
+  anachor : true
+  color : true
+  hide-empty : true
+  html : true
+  indent: 4 #or 2
+  escape: false
+  default: false
+  required: true #| false
+  type: true
+  lock-file: true
+  read-comments: true
+  sensitive : true
+  description: true
