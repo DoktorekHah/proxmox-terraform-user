@@ -1,0 +1,27 @@
+# Checkov configuration for Proxmox Terraform modules
+# Documentation: https://www.checkov.io/1.Welcome/Quick%20Start.html
+
+# Framework settings
+framework:
+  - terraform
+
+# Output formats
+output:
+  - cli
+  - json
+  - sarif
+
+# Skip checks (add specific check IDs here if needed)
+skip-check:
+  - CKV_AWS_123
+  - CKV_TF_1  # Ensure Terraform version is specified
+  - CKV_TF_2  # Ensure Terraform version is pinned
+
+# # Skip download of external modules
+skip-download: true
+
+# # Policy metadata
+# policy-metadata-filters:
+#   - category: security
+#   - category: best_practices
+
